@@ -1,1 +1,3 @@
 gedcom5
+numpy
+pandas
