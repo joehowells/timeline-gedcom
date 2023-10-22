@@ -1,7 +1,5 @@
 import re
 
-import pandas as pd
-
 YEAR = re.compile(r"\b\d{3,4}\b")
 
 
