@@ -1,4 +1,5 @@
 gedcom5
+ipython
 matplotlib
 networkx
 numpy
