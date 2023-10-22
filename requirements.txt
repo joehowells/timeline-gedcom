@@ -1,3 +1,7 @@
 gedcom5
+matplotlib
+networkx
 numpy
 pandas
+scikit-learn
+scipy
