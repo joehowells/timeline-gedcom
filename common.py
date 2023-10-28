@@ -1,6 +1,15 @@
 import re
+from typing import Generator
+
+from gedcom5.gedcom import GEDCOM
+from gedcom5.tag import Tag
 
 YEAR = re.compile(r"\b\d{3,4}\b")
+
+
+def walk(gedcom: GEDCOM) -> Generator[Tag, None, None]:
+    for child in gedcom:
+        yield from _walk_inner(child)
 
 
 def year(date: str) -> int | None:
@@ -17,3 +26,9 @@ def year(date: str) -> int | None:
         return int(match.group())
     else:
         return None
+
+
+def _walk_inner(tag: Tag) -> Generator[Tag, None, None]:
+    yield tag
+    for child in tag:
+        yield from _walk_inner(child)
