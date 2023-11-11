@@ -3,8 +3,8 @@ Workflow for generating cards for the card game [Timeline](https://www.zygomatic
 based on family tree data stored in the Genealogical Data Communication (GEDCOM) file format.
 
 Some genealogy websites such as [Ancestry](https://www.ancestry.com/) and [FindMyPast](https://www.findmypast.com/)
-let their users export their family trees to a GEDCOM file. Their users could use this project create a personalised
-deck of Timeline cards for their respective family trees.
+let their users export their family trees to GEDCOM format. These users could use this project to create a personalised
+deck of Timeline cards from their respective family trees.
 
 The basic idea is to extract all possible events (e.g., births, deaths, marriages) from the GEDCOM file, then select
 a subset of these events (say 50) to use as cards. We want our cards to be spread out across the family tree, not
